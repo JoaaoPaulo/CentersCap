@@ -1,0 +1,187 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    color: #ccc;
+    text-decoration: none;
+    list-style: none;
+}
+
+h2,
+p {
+    color: black;
+}
+
+.sec-produto p {
+    color: black;
+    font-weight: bold;
+}
+
+.sec-produto {
+    margin-top: 160px!important;
+    background: #000;
+}
+
+.sec-produto h1 {
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sec-produto a {
+    background-color: #003d68;
+    text-transform: uppercase;
+}
+
+.center {
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+}
+
+.col1-3 {
+    float: left;
+    max-width: 32%;
+    width: 100%;
+    background: #fff;
+    margin: 10px 0.66%;
+}
+
+.col1-3 img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.col1-3 figcaption {
+    padding: 5px 10px;
+}
+
+
+.col-3 {
+    max-width: 80%;
+    width: 100%;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.col-3 p {
+    background-color: #ccc;
+}
+
+.col-3 img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto ;
+}
+
+/* Cabecalho */
+
+.header {
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+
+}
+
+.menu li {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.menu li a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #003d68;
+    border-bottom: 2px solid #2c424d;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Rodape */
+
+footer {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    padding: 10px auto;
+}
+
+/* Painel Administrativo*/
+
+body {
+    background-color: rgb(223, 223, 223);
+}
+
+input {
+    color: black;
+}
+
+/* Painel administrativo */
+
+#padrao {
+    background-color: #1d1e20;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#padrao h1 {
+    text-align: center;
+    color: #5f7c8a;
+
+}
+
+/*Input Form*/
+
+#padrao input {
+    transition: 0.5s;
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 8px 0;
+    border-radius: 20px;
+
+}
+
+.botao {
+    background-color: #003d68;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    height: 40px;
+    transition: 1s;
+    font-size: 15px;
+}
+
+.botao input[type=submit]:hover {
+    background-color: #2c424d;
+}
+
+.form-prod input {
+    margin: 0 auto;
+    
+}

@@ -1,0 +1,40 @@
+bdVenda
+
+create table tbCategoria(
+	idCategoria int PRIMARY KEY AUTO_INCREMENT
+    ,categoria varchar(40)
+);
+
+insert into tbcategoria values (null,'alimentação');
+insert into tbcategoria values (null,'tecnologia');
+
+create table tbProduto(
+	idProd int primary key auto_increment
+	,imgPro varchar(120)
+	,titImgPro varchar(40)
+	,titPro varchar(40)
+	,idCategoria int
+	,descrPro varchar(40)
+	,valorPro float
+	,foreign key(idCategoria) references tbCategoria(idCategoria)
+);
+
+insert into tbProduto values(
+    null,
+    'caminho/nomeDaImg.extensao'
+    ,'título da imagem do produto'
+    ,'título do produto'
+    ,1
+    ,'Descrição do produto'
+    ,5000
+);
+
+insert into tbProduto values(
+    null,
+    'caminho/nomeDaImg2.extensao'
+    ,'título da imagem do produto2'
+    ,'título do produto2'
+    ,1
+    ,'Descrição do produto2'
+    ,1000
+);
